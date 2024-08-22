@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'recording_button.dart';
 
 class RecordingPage extends StatefulWidget {
@@ -37,10 +38,12 @@ class _RecordingPageState extends State<RecordingPage> {
                 top: 80.0), // Adjust the padding as needed
             child: Text(
               'Recording',
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 219, 197, 255),
+              style: GoogleFonts.robotoMono(
+                textStyle: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 219, 197, 255),
+                ),
               ),
             ),
           ),
